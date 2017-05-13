@@ -7,3 +7,4 @@ studio/**/*
 .rar
 .tar
 .zip
+bower_components/**/*
