@@ -17,4 +17,34 @@
 	.list__check--drop:hover  .list__link--drop{
 		background: url('') 15px 13px no-repeat, #6E978E;
 	}
+	.drop-down{
+		background: #608278;
+	}
+	.drop-down__link{
+		background: #6E978E;
+	}
+	.main-block__link{
+		margin: 5px 0;
+		float: none;
+		display: block;
+	}
+}
+@media screen and (max-width: 600px){
+	.slick__title{
+		font-size: 30px;
+	}
+	.slick__text{
+		display: none;
+	}
+	.slick__info{
+		top: 30px;
+		margin: 0 0 0 -107px;
+	}
+
+}
+@media screen and (max-width: 600px){
+	.slick-arrow::after{
+		width: 30px;
+    height: 34px;
+	}
 }

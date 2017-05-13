@@ -1,7 +1,7 @@
 body{
 	font-family: 'Open Sans', sans-serif;
 	line-height: 1.6;
-	font-size: 12px;
+	font-size: 13px;
 	min-width: 320px;
 	color: #000000;
 	background: #f3f3f3;
@@ -11,7 +11,11 @@ body{
 	max-width: 1175px;
 	margin: 0 auto;
 }
-
+.link-shadow{
+	-webkit-box-shadow: 0px 4px 0px 0px rgba(226,83,75,1);
+	-moz-box-shadow: 0px 4px 0px 0px rgba(226,83,75,1);
+	box-shadow: 0px 4px 0px 0px rgba(226,83,75,1);
+}
 .header{
 	background: url('../img/lines.png') 0  100% repeat-x, #76C7C0;
 }
@@ -186,6 +190,9 @@ body{
 .slick__slider img{
 	width: 100%;
 	height: 500px;
+/* 	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover; */
 }
 .slick-arrow{
 	position: absolute;
@@ -233,7 +240,6 @@ background: url('../img/right-slider-arrow.png') 50% 50% no-repeat, #E8645A;
 }
 .slick-dots{
     position: absolute;
-    width: 100%;
     left: 50%;
     bottom: -28px;
     right: 13px;
@@ -292,4 +298,139 @@ background: url('../img/right-slider-arrow.png') 50% 50% no-repeat, #E8645A;
 	margin: 11px 0;
 	font-size: 16px;
 	letter-spacing: 0.1px;
+}
+.service-block__main-block{
+	background: #ECECEC;
+	margin: 50px 0 0 0;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	padding: 20px 28px;
+	-webkit-border-radius: 4px;
+	        border-radius: 4px;
+}
+.main-block__title{
+	color: #7F8C8C;
+	font-size: 30px;
+	line-height: 36px;
+	font-weight: 600;
+	margin: 0 0 2px;
+	display: inline-block;
+}
+.main-block__text{
+	font-size: 13px;
+	color: #777;
+	letter-spacing: -0.14px;
+	display: inline-block;
+}
+.main-block__link{
+	text-decoration: none;
+	text-transform: uppercase;
+	background: #E8645A;
+	color: #fff;
+	font-size: 20px;
+	line-height: 24px;
+	display: inline-block;
+	padding: 14px 44px 12px;
+	-webkit-border-radius: 4px;
+	        border-radius: 4px;
+	font-weight: 600;
+	float: right;
+	margin: -33px 11px 0 0 ;
+	text-align: center;
+}
+.service-block__flex-block{
+	margin: 40px 0 0 0;
+	display: flex;
+	-webkit-justify-content: space-between;
+	        justify-content: space-between;
+	-webkit-flex-wrap: wrap;
+	    -ms-flex-wrap: wrap;
+	        flex-wrap: wrap;
+}
+.flex-block__item{
+	width: 270px;
+	height: 310px;
+	background: #F8F8F8;
+	-webkit-border-radius: 4px;
+	        border-radius: 4px;
+	text-align: center;
+	margin-bottom: 20px;
+	-webkit-box-sizing: border-box;
+	   -moz-box-sizing: border-box;
+	        box-sizing: border-box;
+	padding: 0 25px;
+	-webkit-transition: all 0.3s ease;
+	   -moz-transition: all 0.3s ease;
+	    -ms-transition: all 0.3s ease;
+	     -o-transition: all 0.3s ease;
+	        transition: all 0.3s ease;
+}
+.flex-block__item:hover{
+		background: #fff;
+}
+.flex-block__item--shadow{
+	-webkit-box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.4);
+	-moz-box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.4);
+	box-shadow: 0px 4px 0px 0px rgba(0,0,0,0.4)
+}
+.item__main-link{
+	display: inline-block;
+	padding: 128px  0 0 0;
+	text-decoration: none;
+	text-transform: uppercase;
+	letter-spacing: ;
+	color: #7f8c8c;
+	font-size: 16px;
+	font-weight: 800;
+	position: relative;
+}
+.main-link__icon{
+	color: #62BDBD;
+	font-size: 60px;
+	position: absolute;
+	left: 9px;
+	top: 50px;
+	-webkit-transition: all 0.4s ease;
+	   -moz-transition: all 0.4s ease;
+	    -ms-transition: all 0.4s ease;
+	     -o-transition: all 0.4s ease;
+	        transition: all 0.4s ease;
+}
+.flex-block__item:hover .main-link__icon{
+	color: #e2534b;
+}
+.item__txt{
+	color: #777;
+	font-size: 13px;
+	letter-spacing: -0.3px;
+	margin: 26px 0px;
+	
+}
+.item__second-link{
+	display: inline-block;
+	font-size: 13px;
+	color: #FFF;
+	background: #76CACA;
+	text-decoration: none;
+	-webkit-border-radius: 4px;
+	        border-radius: 4px;
+	padding: 17px 65px;
+	letter-spacing: 1px;
+}
+.flex-block__item1 .item__second-link{
+	margin: 31px 0 0 8px;
+}
+.flex-block__item2 .item__second-link{
+	margin: 10px 2px 0 0;
+}
+.flex-block__item3 .item__second-link{
+	margin: 10px 4px 0 0;
+}
+.flex-block__item4 .item__second-link{
+	margin: 30px 7px 0 0;
+}
+
+.flex-block__item:hover .item__second-link{
+	background: #e2534b;
 }
